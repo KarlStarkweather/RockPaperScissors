@@ -20,8 +20,21 @@ namespace RockPaperScissors.Tests
       
       //Assert
       Assert.AreEqual(typeof(Round), newRound.GetType());
+    }
 
-
+    [TestMethod]
+    public void RoundConstructor_SetMoves_1()
+    {
+      //Arrange
+      int P1 = 1;
+      int P2 = 2;
+      
+      //Act
+      Round newRound = new Round(P1,P2);
+      
+      //Assert
+      Assert.AreEqual(newRound.Player1Move, 1);
+    
     }
   }
 }
