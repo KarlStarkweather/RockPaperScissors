@@ -37,7 +37,7 @@ namespace RockPaperScissors.Tests
     }
 
     [TestMethod]
-    public void DeclareWinner_CalculateWinner_Player1()
+    public void DeclareWinner_CalculateWinner_Player2Wins()
     {
       //Arrange
       int P1 = 1;
@@ -47,7 +47,7 @@ namespace RockPaperScissors.Tests
       Round newRound = new Round(P1,P2);
       
       //Assert
-      Assert.AreEqual(newRound.DeclareWinner(), "Player 1 Wins!");
+      Assert.AreEqual(newRound.DeclareWinner(), "Player 2 Wins!");
     
     }
   }

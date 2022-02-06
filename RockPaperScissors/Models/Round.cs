@@ -1,3 +1,5 @@
+using System;
+
 namespace RockPaperScissors.Models
 {
   public class Round
@@ -8,6 +10,15 @@ namespace RockPaperScissors.Models
     public string DeclareWinner()
     {
       string winner = "";
+      int rock = 1;
+      int paper = 2;
+      int scissors = 3;
+      
+      if(this.Player1Move == rock && this.Player2Move == paper)
+      {
+        winner = "Player 2 Wins!";
+      }
+
       return winner;
     }
 
