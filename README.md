@@ -10,6 +10,12 @@
 _The game is played by 2 people. Each person elects "Rock", "Paper", or "Scissors" in the terminal.
 _Each person chooses at the same time, so that each person doesn't know what the other person has picked.
 _If one person chooses "Rock" and the other person picks "Scissors" then "Rock" wins. It's a game of combinations:
+
+-The user enters the moves of the two players using integers to represent moves:
+1 = Rock
+2 = Paper
+3 = Scissors
+
 ```
 Rock v. Scissors = Rock wins
 Rock v. Paper = Paper wins
