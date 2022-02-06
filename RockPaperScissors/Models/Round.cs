@@ -13,7 +13,8 @@ namespace RockPaperScissors.Models
 
     public Round(int player1Move, int player2Move)
     {
-
+      this.Player1Move = player1Move;
+      this.Player2Move = player2Move;
     }
   }
 }
