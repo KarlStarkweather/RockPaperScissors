@@ -10,10 +10,6 @@ namespace RockPaperScissors.Models
     public string DeclareWinner()
     {
       string winner = "";
-      // int "rock" = 1;
-      // int "paper" = 2;
-      // int "scissors" = 3;
-      
       switch(this.Player1Move)
       {
         case "rock":
