@@ -7,7 +7,8 @@ namespace RockPaperScissors.Models
 
     public string DeclareWinner()
     {
-
+      string winner = "";
+      return winner;
     }
 
     public Round(int player1Move, int player2Move)
