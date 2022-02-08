@@ -10,83 +10,102 @@ namespace RockPaperScissors.Models
     public string DeclareWinner()
     {
       string winner = "";
-      switch(this.Player1Move)
-      {
-        case "rock":
+      try
+      {        
+        switch(this.Player1Move)
         {
-          switch(this.Player2Move)
+          case "rock":
           {
-            case "rock":
-              {
-                winner = "Draw. Try again!";
-                break;
-              }
-            case "paper": 
-              {
-                winner = "Player 2 Wins!";
-                break;
-              }
-            case "scissors":
-              {
-                winner = "Player 1 Wins!";
-                break;
-              }
+            switch(this.Player2Move)
+            {
+              case "rock":
+                {
+                  winner = "Draw. Try again!";
+                  break;
+                }
+              case "paper": 
+                {
+                  winner = "Paper covers Rock, Player 2 Wins!";
+                  break;
+                }
+              case "scissors":
+                {
+                  winner = "Rock crushes Scissors, Player 1 Wins!";
+                  break;
+                }
+            }
+            break;
           }
-          break;
-        }
-        case "paper":
-        {
-          switch(this.Player2Move)
+          case "paper":
           {
-            case "rock":
-              {
-                winner = "Player 1 Wins!";
-                break;
-              }
-            case "paper": 
-              {
-                winner = "Draw. Try again!";
-                break;
-              }
-            case "scissors":
-              {
-                winner = "Player 2 Wins!";
-                break;
-              }
+            switch(this.Player2Move)
+            {
+              case "rock":
+                {
+                  winner = "Paper covers Rock, Player 1 Wins!";
+                  break;
+                }
+              case "paper": 
+                {
+                  winner = "Draw. Try again!";
+                  break;
+                }
+              case "scissors":
+                {
+                  winner = "Scissors cut Paper, Player 2 Wins!";
+                  break;
+                }
+            }
+            break;
           }
-          break;
-        }
-        case "scissors":
-        {
-          switch(this.Player2Move)
+          case "scissors":
           {
-            case "rock":
-              {
-                winner = "Player 2 Wins!";
-                break;
-              }
-            case "paper": 
-              {
-                winner = "Player 1 Wins!";
-                break;
-              }
-            case "scissors":
-              {
-                winner = "Draw. Try again!";
-                break;
-              }
+            switch(this.Player2Move)
+            {
+              case "rock":
+                {
+                  winner = "Rock crushes Scissors, Player 2 Wins!";
+                  break;
+                }
+              case "paper": 
+                {
+                  winner = "Scissors cut Paper, Player 1 Wins!";
+                  break;
+                }
+              case "scissors":
+                {
+                  winner = "Draw. Try again!";
+                  break;
+                }
+            }
+            break;
           }
-          break;
         }
       }
-
+      catch (Exception ex)
+      {
+        Console.WriteLine("Message = {0}", ex.Message);
+        Console.WriteLine("Source = {0}", ex.Source);
+        Console.WriteLine("StackTrace = {0}", ex.StackTrace);
+        Console.WriteLine("TargetSite = {0}", ex.TargetSite);
+      }
       return winner;
     }
 
     public Round(string player1Move, string player2Move)
     {
-      this.Player1Move = player1Move;
-      this.Player2Move = player2Move;
+      try
+      {
+        this.Player1Move = player1Move;
+        this.Player2Move = player2Move;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine("Message = {0}", ex.Message);
+        Console.WriteLine("Source = {0}", ex.Source);
+        Console.WriteLine("StackTrace = {0}", ex.StackTrace);
+        Console.WriteLine("TargetSite = {0}", ex.TargetSite);
+      }
     }
   }
 }

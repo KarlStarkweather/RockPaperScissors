@@ -4,17 +4,12 @@
 
 ### _February 6, 2022_
 
-#### _Rock Paper Scissors is an ancient and venerable contest for establishing dominance, or a fun children's game, depending on your perspective. This application is meant to compliment the physical play of two users to determine who has won a particular round. (Please note that users must have a hand (left or right) with at least two fingers to play)_
+#### _Rock Paper Scissors is an ancient and venerable contest for establishing dominance, or a fun children's game, depending on your perspective. This application is meant to compliment the physical play of two users to determine who has won a particular round. (Please note that users must have at least one hand,with at least two fingers to play)_
 
 #### Rules Of The Game
 _The game is played by 2 people. Each person elects "Rock", "Paper", or "Scissors" in the terminal.
 _Each person chooses at the same time, so that each person doesn't know what the other person has picked.
 _If one person chooses "Rock" and the other person picks "Scissors" then "Rock" wins. It's a game of combinations:
-
--The user enters the moves of the two players using integers to represent moves:
-1 = Rock
-2 = Paper
-3 = Scissors
 
 ```
 Rock v. Scissors = Rock wins
@@ -37,22 +32,23 @@ Receive input from a user identifying moves played by two people in a round of R
 
 ### User Interface
 
-Campy consists of 5 HTML pages, each containing unique functions for user engagement.
-| HTML | UI Function |
-| ------ | ------ |
-| Index | Introduction landing page. |
-| Gear | Drag and drop options from hard-coded lists based on various camping styles, each with unique packing list recommendations. |
-| Weather & Map | Search LocationIQ and OpenWeather APIs by entering a city & state to see a 7-day forecast and map. |
-| Meals | Search MealDB and CocktailDB APIs to get recipes with images, ingredients, measurements, and instructions. |
-| About | Information about the Dev team with links to individual GitHub and LinkedIn accounts. |
+This application displays text through the terminal. It prompts the user for inputs ("rock" "paper" or "scissors" for each player) and displays the result of the round.
 
 
 ## Project Setup/Installation Instructions
 
-- 
+- Open the terminal on your computer.
+- Navigate to the parent directory of your preference.
+
+- Clone the application on your computer by entering: 
+```git clone https://github.com/KarlStarkweather/RockPaperScissors```
+in the terminal
+- Run the command ```dotnet build```.
+- Run the command ```dotnet run```.
 
 ## Additional Setup/Installation Note for Windows Users
 
+- None
 
 ## Known Bugs
 
@@ -66,5 +62,5 @@ Campy consists of 5 HTML pages, each containing unique functions for user engage
 
 If you encounter any issues with this site, please contact the dev team:
 
-- 
 - Cesar Lopez at [Lopez.cesar.aug@gmail.com](mailto:lopez.cesar.aug@gmail.com)
+- Karl Starkweather [stark13@usa.net](mailto:stark13@usa.net)
